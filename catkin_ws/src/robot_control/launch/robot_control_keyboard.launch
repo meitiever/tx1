@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+
+<launch>
+  <include file="$(find roboclaw_node)/launch/roboclaw.launch"/>
+  <include file="$(find teleop_twist_keyboard)/launch/run.launch"/>
+</launch>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+
+<launch>
+  <include file="$(find roboclaw_node)/launch/roboclaw.launch"/>  
+  <node pkg="robot_control" type="RobotControl.py" name="robot_control" output="screen">
+    <param name="param_path" value="$(find robot_control)/params/params.yaml"/>
+  </node>
+  <node pkg="robot_control" type="tf_image_broadcaster.py" name="robot_image_tf" output="screen" />  
+</launch>
